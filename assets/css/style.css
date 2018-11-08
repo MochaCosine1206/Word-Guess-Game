@@ -1,3 +1,9 @@
 body {
-    background-image: linear-gradient(to bottom right, pink, violet);
+    background-image: url(../images/foodpattern-drbl800.gif);
+    background-repeat: repeat;
+    overflow: hidden;
+}
+
+#dynamic {
+    background-image: url(../images/flyingpizza.gif);
 }

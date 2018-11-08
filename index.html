@@ -12,30 +12,39 @@
 </head>
 
 <body>
-    <div class="jumbotron text-center">
-        <h1>Word Guess Game!</h1>
+    <div class="row text-center justify-content-md-center">
+        <div class="col-xs-12">
+            <div class="card">
+                <div class="card-body">
+                    <h1>Esoteric Food Word Guess!!!</h1>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container">
         <div class="row text-center justify-content-md-center">
             <div class="col-md-5 bg.light">
                 <div class="card">
                     <div class="card-body">
-                        <h1>Left Column</h1>
+                        <h1>Picture</h1>
+                    </div>
+                    <div class="card-footer">
+                        Clue
                     </div>
                 </div>
             </div>
             <div class="col-md-5 bg.light">
                 <div class="card">
-                    <div class="card-body">
-                            <h1>Right Column</h1>
-                            <p>Press Any Key To Get Started!</p>
-                            <p>Wins:</p>
-                            <span id="wins">0</span>
-                            <p>Current Word</p>
-                            <p id="blankWord">_ _ _</p>
-                            <p>Number of Guesses Remaining</p> <span id="guessesRMN"></span>
-                            <p>Letters already guessed</p>
-                            <p id="lettersGuessed">-</p>
+                    <div class="card-body" id="dynamic">
+                        <h1>Right Column</h1>
+                        <p>Press Any Key To Get Started!</p>
+                        <p>Wins:</p>
+                        <span id="wins">0</span>
+                        <p>Current Word</p>
+                        <p id="blankWord">_ _ _</p>
+                        <p>Number of Guesses Remaining</p> <span id="guessesRMN"></span>
+                        <p>Letters already guessed</p>
+                        <p id="lettersGuessed">-</p>
                     </div>
                 </div>
             </div>
