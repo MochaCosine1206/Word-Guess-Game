@@ -1,12 +1,28 @@
 body {
-    /* background-image: url(../images/foodpattern-drbl800.gif);
+    background-image: url(../images/foodpattern-drbl800.gif);
     background-repeat: repeat;
-    overflow: hidden; */
+    overflow: hidden;
     background-color: #ffffff;
 }
 
+
 #header {
     margin-bottom: 30px;
+    font-family: 'Pacifico', cursive;
+    background-color: red;
+}
+
+#header h1 {
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}
+
+#leveltxt {
+    font-size: 70px;
+    color: yellow;
+    text-shadow: 2px 2px 10px black;
+    font-family: 'Eczar', serif;
 }
 
 .card-img {
@@ -15,12 +31,15 @@ body {
     background-size: cover;
 }
 
+
 #counter {
     font-size: 44px;
 }
 
 #dynamic {
     /* background-image: url(../images/flyingpizza.gif); */
+    font-family: 'Arvo', serif;
+    font-size: 21px;
 }
 
 

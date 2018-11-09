@@ -16,10 +16,18 @@ var wrongGuess = [];
 function playGame() {
         if (wins >= 9 && wins <= 19) {
                 answer = wordList2[Math.floor(Math.random() * wordList2.length)];
+                document.body.style.backgroundImage = "url(./assets/images/blue.gif)";
+                document.getElementById("header").style.backgroundColor = "#000080";
+                document.getElementById("leveltxt").innerHTML = " - LEVEL 2";
         } else if (wins > 19) {
                 answer = wordList3[Math.floor(Math.random() * wordList3.length)];
+                document.body.style.backgroundImage = "url(./assets/images/galaxy.gif)";
+                document.getElementById("header").style.backgroundColor = "white";
+                document.getElementById("header h1").style.color = "#000080";
+                document.getElementById("leveltxt").innerHTML = " - LEVEL 3";
         } else {
                 answer = wordList1[Math.floor(Math.random() * wordList1.length)];
+                document.getElementById("leveltxt").innerHTML = " - LEVEL 1";
         };
         currentWord = answer.split("");
         blanks = answer.length;
