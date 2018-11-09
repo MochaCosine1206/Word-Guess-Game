@@ -12,45 +12,50 @@
 </head>
 
 <body>
-    <div class="row text-center justify-content-md-center">
-        <div class="col-xs-12">
-            <div class="card">
-                <div class="card-body">
-                    <h1>Esoteric Food Word Guess!!!</h1>
+    <div class="container border shadow" id="header">
+        <div class="row text-center justify-content-md-center">
+            <div class="col-xs-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Esoteric Food Word Guess!!!</h1>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row text-center justify-content-md-center">
-            <div class="col-md-5 bg.light">
-                <div class="card">
-                    <div class="card-body">
-                        <h1>Picture</h1>
+            <div class="col-md-4 bg.light">
+                <div class="card" id="leftCard">
+                    <img class="card-img" src="assets/images/pancetta-product-shot.png" id="image">
+                    <div class="card-footer" id="clues">
+                        Clues go here!
                     </div>
-                    <div class="card-footer">
-                        Clue
+                </div>
+                <div class="card" id="leftCard">
+                    <div class="card-body" id="counter">
+                        1
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 bg.light">
-                <div class="card">
-                    <div class="card-body" id="dynamic">
-                        <h1>Right Column</h1>
-                        <p>Press Any Key To Get Started!</p>
-                        <p>Wins:</p>
-                        <span id="wins">0</span>
-                        <p>Current Word</p>
-                        <p id="blankWord">_ _ _</p>
-                        <p>Number of Guesses Remaining</p> <span id="guessesRMN"></span>
-                        <p>Letters already guessed</p>
-                        <p id="lettersGuessed">-</p>
+                <div class="col-md-6 bg.light">
+                    <div class="card">
+                        <div class="card-body" id="dynamic">
+                            <h1>Right Column</h1>
+                            <p>Press Any Key To Get Started!</p>
+                            <p>Wins:</p>
+                            <span id="wins">0</span>
+                            <p>Current Word</p>
+                            <p id="blankWord">_ _ _</p>
+                            <p>Number of Guesses Remaining</p> <span id="guessesRMN"></span>
+                            <p>Letters already guessed</p>
+                            <p id="lettersGuessed">-</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <script src="assets/javascript/game.js"></script>
 </body>
 

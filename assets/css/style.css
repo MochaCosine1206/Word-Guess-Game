@@ -1,9 +1,26 @@
 body {
-    background-image: url(../images/foodpattern-drbl800.gif);
+    /* background-image: url(../images/foodpattern-drbl800.gif);
     background-repeat: repeat;
-    overflow: hidden;
+    overflow: hidden; */
+    background-color: #ffffff;
+}
+
+#header {
+    margin-bottom: 30px;
+}
+
+.card-img {
+    background-image: url(../images/flyingpizza.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#counter {
+    font-size: 44px;
 }
 
 #dynamic {
     /* background-image: url(../images/flyingpizza.gif); */
 }
+
+
