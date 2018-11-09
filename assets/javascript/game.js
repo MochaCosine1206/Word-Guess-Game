@@ -2,7 +2,7 @@ var wordList1 = ["apple", "blueberry", "sandwich", "brownie", "orange", "bacon",
 var wordList2 = ["sushi", "artichoke", "kimchi", "basil", "taro", "cobbler", "cantaloupe", "daikon", "hummus", "habanero", "brioche", "spaghetti", "cheddar", "bundt", "mussels", "pomegranate", "romaine", "espresso", "lasagna", "macaroon"];
 var wordList3 = ["porcini", "mangosteen", "raclette", "durian", "okonomiyaki", "poutine", "caipirinha", "gnocchi", "guanciale", "napoleon", "endive", "mascarpone", "paella", "prosciutto", "pomelo", "eclair", "tiramisu", "macchiato", "bento", "anancini"];
 var answer = "";
-var blanks = 0
+var blanks = 0;
 var wins = 0;
 var losses = 0;
 var guessesRemaining = 10;
@@ -244,6 +244,8 @@ function startOver() {
 }
 
 function totalReset() {
+        wins = 0;
+        document.getElementById("wins").innerHTML = wins;
         guessesRemaining = 10;
         wrongGuess = [];
         currentBlanks = [];
@@ -281,7 +283,6 @@ function win() {
 
         } else if (guessesRemaining === 0) {
                 // losses++;
-
                 totalReset();
                 // document.getElementById("losses").innerHTML = losses;
         }
