@@ -236,7 +236,7 @@ function picAud() {
 // };
 
 function startOver() {
-        guessesRemaining = 10;
+        // guessesRemaining = 10;
         wrongGuess = [];
         currentBlanks = [];
         playGame()
