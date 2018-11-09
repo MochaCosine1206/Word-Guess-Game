@@ -13,7 +13,13 @@ var wrongGuess = [];
 
 
 function playGame() {
-        answer = wordList1[Math.floor(Math.random() * wordList1.length)];
+        if (wins > 9) {
+                answer = wordList2[Math.floor(Math.random() * wordList2.length)];
+        } else if (wins > 19) {
+                answer = wordList3[Math.floor(Math.random() * wordList3.length)];
+        } else {
+                answer = wordList1[Math.floor(Math.random() * wordList1.length)];
+        };
         currentWord = answer.split("");
         blanks = answer.length;
 
@@ -28,14 +34,12 @@ function playGame() {
         console.log(currentBlanks);
 }
 
-
-function startOver () {
+function startOver() {
         guessesRemaining = 10;
         wrongGuess = [];
         currentBlanks = [];
         playGame()
 }
-
 
 function checkltr(letter) {
         var wordLetter = false;
@@ -61,11 +65,11 @@ function checkltr(letter) {
 function win() {
         console.log("wins: " + wins + "| losses:" + losses + "|guesses left:" + guessesRemaining)
 
-        if(currentWord.toString() == currentBlanks.toString()) {
+        if (currentWord.toString() == currentBlanks.toString()) {
                 wins++;
                 document.getElementById("wins").innerHTML = wins;
                 startOver();
-                
+
         } else if (guessesRemaining === 0) {
                 // losses++;
                 startOver();
