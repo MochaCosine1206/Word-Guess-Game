@@ -32,7 +32,7 @@ function playGame() {
         currentWord = answer.split("");
         blanks = answer.length;
         picAud()
-        guessesRemaining = 10;
+
 
         for (i = 0; i < blanks; i++) {
                 currentBlanks.push("_");
@@ -243,6 +243,13 @@ function startOver() {
         playGame()
 }
 
+function totalReset() {
+        guessesRemaining = 10;
+        wrongGuess = [];
+        currentBlanks = [];
+        playGame()
+}
+
 function checkltr(letter) {
         var wordLetter = false;
         for (var i = 0; i < blanks; i++) {
@@ -275,7 +282,7 @@ function win() {
         } else if (guessesRemaining === 0) {
                 // losses++;
 
-                startOver();
+                totalReset();
                 // document.getElementById("losses").innerHTML = losses;
         }
         document.getElementById("guessesRMN").innerHTML = guessesRemaining;
