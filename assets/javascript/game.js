@@ -1,4 +1,6 @@
-var wordList = ["christmas", "santa", "reindeer", "sleigh", "frosty", "roudolph", "yule", "stockings", "fireplace", "snowy", "tree"];
+var wordList1 = ["apple", "blueberry", "sandwich", "brownie", "orange", "bacon", "carrot", "hamburger", "nut", "avocado", "bagel", "burrito", "cheese", "cake", "ketchup", "potato", "soup", "coffee", "waffle", "egg"];
+var wordList2 = ["sushi", "artichoke", "kimchi", "basil", "taro", "cobbler", "cantaloupe", "daikon", "hummus", "serrano", "brioche", "spaghetti", "cheddar", "torte", "mussels", "pomegranate", "romaine", "espresso", "lasagna", "macaroon"];
+var wordList3 = ["porcini", "mangosteen", "raclette", "durian", "okonomiyaki", "poutine", "caipirinha", "gnocchi", "guanciale", "napoleon", "endive", "mascarpone", "paella", "prosciutto", "pomelo", "eclair", "tiramisu", "macchiato", "bento", "anancini"];
 var answer = "";
 var blanks = 0
 var wins = 0;
@@ -9,10 +11,9 @@ var currentBlanks = [];
 var alreadyGuessed = [];
 var wrongGuess = [];
 
-//Need to get index of guessed letter in the answer and display it in the proper place in the blanks  
 
 function playGame() {
-        answer = wordList[Math.floor(Math.random() * wordList.length)];
+        answer = wordList1[Math.floor(Math.random() * wordList1.length)];
         currentWord = answer.split("");
         blanks = answer.length;
 
@@ -28,14 +29,13 @@ function playGame() {
 }
 
 
-
-
 function startOver () {
         guessesRemaining = 10;
         wrongGuess = [];
         currentBlanks = [];
         playGame()
 }
+
 
 function checkltr(letter) {
         var wordLetter = false;
