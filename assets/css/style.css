@@ -25,6 +25,10 @@ body {
     font-family: 'Eczar', serif;
 }
 
+#highScore {
+    font-size: 16px;
+}
+
 .card-img {
     background-image: url(../images/flyingpizza.gif);
     background-repeat: no-repeat;

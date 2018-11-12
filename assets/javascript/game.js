@@ -12,6 +12,8 @@ var alreadyGuessed = [];
 var wrongGuess = [];
 var count = 60;
 var timerDown = setInterval(countDown, 1000);
+// var highScore;
+// var localStorageName = "";
 
 
 function playGame() {
@@ -23,13 +25,14 @@ function playGame() {
         } else if (wins >= 20) {
                 answer = wordList3[Math.floor(Math.random() * wordList3.length)];
                 document.body.style.backgroundImage = "url(./assets/images/galaxy.gif)";
-                document.getElementById("header").style.backgroundColor = "white";
-                document.getElementById("leveltxt").style.color = "#000080";
+                document.getElementById("header").style.backgroundColor = "000080";
+                document.getElementById("leveltxt").style.color = "yellow";
                 document.getElementById("leveltxt").innerHTML = " - LEVEL 3";
         } else {
                 answer = wordList1[Math.floor(Math.random() * wordList1.length)];
                 document.body.style.backgroundImage = "url(./assets/images/foodpattern-drbl800.gif)";
                 document.getElementById("header").style.backgroundColor = "red";
+                document.getElementById("leveltxt").style.color = "yellow";
                 document.getElementById("leveltxt").innerHTML = " - LEVEL 1";
         };
         currentWord = answer.split("");
@@ -47,6 +50,146 @@ function playGame() {
         console.log(blanks);
         console.log(currentBlanks);
 }
+
+function preloader() {
+        var apple = new Image();
+        var blueberry = new Image();
+        var sandwich = new Image();
+        var brownie = new Image();
+        var orange = new Image();
+        var bacon = new Image();
+        var carrot = new Image();
+        var hamburger = new Image();
+        var nut = new Image();
+        var avocado = new Image();
+        var bagel = new Image();
+        var burrito = new Image();
+        var cheese = new Image();
+        var cake = new Image();
+        var ketchup = new Image();
+        var potato = new Image();
+        var soup = new Image();
+        var coffee = new Image();
+        var waffle = new Image();
+        var egg = new Image();
+        var sushi = new Image();
+        var artichoke = new Image();
+        var kimchi = new Image();
+        var basil = new Image();
+        var taro = new Image();
+        var cobbler = new Image();
+        var cantaloupe = new Image();
+        var daikon = new Image();
+        var hummus = new Image();
+        var habanero = new Image();
+        var brioche = new Image();
+        var spaghetti = new Image();
+        var cheddar = new Image();
+        var bundt = new Image();
+        var mussels = new Image();
+        var pomegranate = new Image();
+        var romaine = new Image();
+        var espresso = new Image();
+        var lasagna = new Image();
+        var macaroon = new Image();
+        var porcini = new Image();
+        var mangosteen = new Image();
+        var raclette = new Image();
+        var durian = new Image();
+        var okonomiyaki = new Image();
+        var poutine = new Image();
+        var caipirinha = new Image();
+        var gnocchi = new Image();
+        var guanciale = new Image();
+        var napoleon = new Image();
+        var endive = new Image();
+        var mascarpone = new Image();
+        var paella = new Image();
+        var prosciutto = new Image();
+        var pomelo = new Image();
+        var eclair = new Image();
+        var tiramisu = new Image();
+        var macchiato = new Image();
+        var bento = new Image();
+        var anancini = new Image();
+
+        apple.src = "./assets/images/apple.png";
+        blueberry.src = "./assets/images/blueberry.png";
+        sandwich.src = "./assets/images/sandwich.png";
+        brownie.src = "./assets/images/brownie.png";
+        orange.src = "./assets/images/orange.png";
+        bacon.src = "./assets/images/bacon.png";
+        carrot.src = "./assets/images/carrot.png";
+        hamburger.src = "./assets/images/hamburger.png";
+        nut.src = "./assets/images/nut.png";
+        avocado.src = "./assets/images/avocado.png";
+        bagel.src = "./assets/images/bagel.png";
+        burrito.src = "./assets/images/burrito.png";
+        cheese.src = "./assets/images/cheese.png";
+        cake.src = "./assets/images/cake.png";
+        ketchup.src = "./assets/images/ketchup.png";
+        potato.src = "./assets/images/potato.png";
+        soup.src = "./assets/images/soup.png";
+        coffee.src = "./assets/images/coffee.png";
+        waffle.src = "./assets/images/waffle.png";
+        egg.src = "./assets/images/egg.png";
+        sushi.src = "./assets/images/sushi.png";
+        artichoke.src = "./assets/images/artichoke.png";
+        kimchi.src = "./assets/images/kimchi.png";
+        basil.src = "./assets/images/basil.png";
+        taro.src = "./assets/images/taro.png";
+        cobbler.src = "./assets/images/cobbler.png";
+        cantaloupe.src = "./assets/images/cantaloupe.png";
+        daikon.src = "./assets/images/daikon.png";
+        hummus.src = "./assets/images/hummus.png";
+        habanero.src = "./assets/images/habanero.png";
+        brioche.src = "./assets/images/brioche.png";
+        spaghetti.src = "./assets/images/spaghetti.png";
+        cheddar.src = "./assets/images/cheddar.png";
+        bundt.src = "./assets/images/bundt.png";
+        mussels.src = "./assets/images/mussels.png";
+        pomegranate.src = "./assets/images/pomegranate.png";
+        romaine.src = "./assets/images/romaine.png";
+        espresso.src = "./assets/images/espresso.png";
+        lasagna.src = "./assets/images/lasagna.png";
+        macaroon.src = "./assets/images/macaroon.png";
+        porcini.src = "./assets/images/porcini.png";
+        mangosteen.src = "./assets/images/mangosteen.png";
+        raclette.src = "./assets/images/raclette.png";
+        durian.src = "./assets/images/durian.png";
+        okonomiyaki.src = "./assets/images/okonomiyaki.png";
+        poutine.src = "./assets/images/poutine.png";
+        caipirinha.src = "./assets/images/caipirinha.png";
+        gnocchi.src = "./assets/images/gnocchi.png";
+        guanciale.src = "./assets/images/guanciale.png";
+        napoleon.src = "./assets/images/napoleon.png";
+        endive.src = "./assets/images/endive.png";
+        mascarpone.src = "./assets/images/mascarpone.png";
+        paella.src = "./assets/images/paella.png";
+        prosciutto.src = "./assets/images/prosciutto.png";
+        pomelo.src = "./assets/images/pomelo.png";
+        eclair.src = "./assets/images/eclair.png";
+        tiramisu.src = "./assets/images/tiramisu.png";
+        macchiato.src = "./assets/images/macchiato.png";
+        bento.src = "./assets/images/bento.png";
+        anancini.src = "./assets/images/anancini.png";
+}
+
+function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+                window.onload = func;
+        } else {
+                window.onload = function () {
+                        if (oldonload) {
+                                oldonload();
+                        }
+                        func();
+                }
+        }
+}
+
+addLoadEvent(preloader);
 
 function picClue() {
         if (answer === wordList1[0]) {
@@ -236,26 +379,34 @@ function picClue() {
 function countDown() {
         document.getElementById("counter").innerHTML = count--;
         if (count > 10) {
-                $(document).ready(function(){
-                        
-                        $("#counter").css("color","black");
-                        
+                $(document).ready(function () {
+                        $("#counter").css("color", "black");
                 });
-        }else if (count <= 9) {
-                $(document).ready(function(){
-                        $("#counter").css("color","red");
-                        $("#counter").animate({"font-size": "+=40px"},'fast')
-                        $("#counter").animate({"font-size": "-=40px"},'fast');
-                        $("#counter").stop(stopAll,goToEnd);
+        } else if (count <= 9) {
+                $(document).ready(function () {
+                        $("#counter").css("color", "red");
+                        $("#counter").animate({ "font-size": "+=40px" }, 'fast')
+                        $("#counter").animate({ "font-size": "-=40px" }, 'fast');
+                        $("#counter").stop(stopAll, goToEnd);
                 });
         }
 
         if (count < 1) {
-                // clearInterval(timerDown);
                 //show high score game over modal;
                 totalReset()
         };
 };
+
+// function scoreAdd() {
+//         if (typeof(Storage) !== "undefined") {
+//         highScore = Math.max(wins, highScore);
+//         localStorage.setItem(localStorageName, highScore);
+//         document.getElementById("highScore").innerHTML = "Current High Score = " + localStorage.getItem(highScore);
+
+//         } else {
+//                 document.getElementById("highScore").innerHTML = "Sorry, high score not available on this browser. :("
+//         }
+// }
 
 
 
@@ -270,6 +421,7 @@ function totalReset() {
         count = 60;
         wrongGuess = [];
         currentBlanks = [];
+        // scoreAdd()
         wins = 0;
         document.getElementById("wins").innerHTML = wins;
         document.getElementById("guessesRMN").innerHTML = guessesRemaining = 10;
@@ -299,7 +451,7 @@ function checkltr(letter) {
 }
 
 function win() {
-        console.log("wins: " + wins + "| losses:" + losses + "|guesses left:" + guessesRemaining)
+        console.log("wins: " + wins + "| losses:" + losses + "|guesses left:" + guessesRemaining + "|high Score: " + highScore);
 
         if (currentWord.toString() == currentBlanks.toString()) {
                 wins++;
