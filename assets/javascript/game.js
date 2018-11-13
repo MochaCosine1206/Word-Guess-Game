@@ -16,6 +16,7 @@ var timerDown = setInterval(countDown, 1000);
 // var localStorageName = "";
 
 
+
 function playGame() {
         if (wins >= 9 && wins <= 19) {
                 answer = wordList2[Math.floor(Math.random() * wordList2.length)];
@@ -28,16 +29,21 @@ function playGame() {
                 document.getElementById("header").style.backgroundColor = "000080";
                 document.getElementById("leveltxt").style.color = "yellow";
                 document.getElementById("leveltxt").innerHTML = " - LEVEL 3";
-        } else {
+        } else if (wins <= 8) {
                 answer = wordList1[Math.floor(Math.random() * wordList1.length)];
                 document.body.style.backgroundImage = "url(./assets/images/foodpattern-drbl800.gif)";
                 document.getElementById("header").style.backgroundColor = "red";
                 document.getElementById("leveltxt").style.color = "yellow";
                 document.getElementById("leveltxt").innerHTML = " - LEVEL 1";
+        } else {
+
         };
+
         currentWord = answer.split("");
         blanks = answer.length;
         picClue();
+        // var wl1 = wordList1.indexOf(answer);
+        // var rstWl1 = wordList1.splice(wl1,1);
 
 
         for (i = 0; i < blanks; i++) {
@@ -45,6 +51,8 @@ function playGame() {
         }
         document.getElementById("blankWord").innerHTML = "  " + currentBlanks.join("  ");
 
+        // console.log(wl1);
+        // console.log(rstWl1);
         console.log(answer);
         console.log(currentWord);
         console.log(blanks);
@@ -396,6 +404,12 @@ function countDown() {
                 totalReset()
         };
 };
+
+
+// function countDownReset () {
+//         clearInterval(timerDown);
+        
+// };
 
 // function scoreAdd() {
 //         if (typeof(Storage) !== "undefined") {
