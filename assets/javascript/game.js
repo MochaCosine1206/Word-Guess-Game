@@ -38,12 +38,11 @@ function playGame() {
         } else {
 
         };
-
         currentWord = answer.split("");
         blanks = answer.length;
         picClue();
-        // var wl1 = wordList1.indexOf(answer);
-        // var rstWl1 = wordList1.splice(wl1,1);
+
+
 
 
         for (i = 0; i < blanks; i++) {
@@ -51,8 +50,6 @@ function playGame() {
         }
         document.getElementById("blankWord").innerHTML = "  " + currentBlanks.join("  ");
 
-        // console.log(wl1);
-        // console.log(rstWl1);
         console.log(answer);
         console.log(currentWord);
         console.log(blanks);
@@ -406,10 +403,6 @@ function countDown() {
 };
 
 
-// function countDownReset () {
-//         clearInterval(timerDown);
-        
-// };
 
 // function scoreAdd() {
 //         if (typeof(Storage) !== "undefined") {
