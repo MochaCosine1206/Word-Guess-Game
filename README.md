@@ -1,7 +1,7 @@
 # Word-Guess-Game
 
 
-
+![screenshot](https://github.com/MochaCosine1206/Word-Guess-Game/issues/1#issue-380739988)
 This is the week 3 assignment of the bootcamp.  We were tasked with creating a "word-guess" game in which the following parameters had to be met:
  - A random word is chosen by the computer.
  - The user then has to guess the word, letter for letter.
