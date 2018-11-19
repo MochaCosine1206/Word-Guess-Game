@@ -15,3 +15,5 @@ This is the week 3 assignment of the bootcamp.  We were tasked with creating a "
    - In order to create a sense of urgency, I added a countdown timer which flashes red at 10 seconds or less.
    - If the counter reaches 0, the game starts over.
    - If the user uses up all their guesses, the game starts over.
+   
+   [play here](https://mochacosine1206.github.io/Word-Guess-Game/)
