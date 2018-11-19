@@ -10,7 +10,7 @@ var currentWord = [];
 var currentBlanks = [];
 var alreadyGuessed = [];
 var wrongGuess = [];
-var count = 20;
+var count = 80;
 var timerDown = setInterval(countDown, 1000);
 
 //main game play function cycling through levels of difficulty
@@ -339,7 +339,7 @@ function countDown() {
                 });
         }
         if (count < 1) {
-                count = 20;
+                count = 80;
                 totalReset()
         };
 };
